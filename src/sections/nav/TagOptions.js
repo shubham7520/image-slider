@@ -2,11 +2,11 @@ import "./TagOptions.css"
 const TagOptions = () => {
     return (
         <div className="nevbar">
-            <button>Walllpapers</button>
-            <button>Travel</button>
-            <button>Neture</button>
-            <button>Animals</button>
-            <button>Food & Drink</button>
+            <button className="nevbtn">Walllpapers</button>
+            <button className="nevbtn">Travel</button>
+            <button className="nevbtn">Nature</button>
+            <button className="nevbtn">Animals</button>
+            <button className="nevbtn">Food & Drink</button>
         </div>
     )
 }

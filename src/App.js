@@ -1,10 +1,11 @@
 import './App.css';
-import Sliderpage from './sections/header/Sliderpage';
-import { reg } from './Components/Image';
+import Main from './Main';
+
+
 function App() {
   return (
     <div className="App">
-      <Sliderpage slides={reg} />
+      <Main />
     </div>
   );
 }

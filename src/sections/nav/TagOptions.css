@@ -1,21 +1,32 @@
 .nevbar{
     
      align-items: center;
-    height: 60px;
+    height: 100px;
     width: 70%;
     display: flex;
     justify-content: space-between;
     
 }
-button{
-    background-color: aliceblue;
-    height: 30px;
-    width: 100px;
-    margin: 0px 50px;
-    border: none;
-    border-radius: 10px;
-}
-button:hover{
-    background-color: rgba(241,155,170,.5);
-    color: white;
-}
+
+.nevbtn {
+    background-color: #fbeee0;
+    border: 2px solid #422800;
+    border-radius: 30px;
+    color: #422800;
+    cursor: pointer;
+    font-weight: 600;
+    font-size: 18px;
+    padding: 0 18px;
+    line-height: 50px;
+    text-align: center;
+    text-decoration: none;
+  }
+  
+  .nevbtn:hover {
+    background-color: #fff;
+    transition: 300ms ease;
+    transform: translate(-2.5px,-2.2px);
+    box-shadow: #422800 2px 3px 0 0;
+  }
+  
+  

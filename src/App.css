@@ -1,4 +1,5 @@
 .App {
   text-align: center;
-  background-color: gray;
+  background-image: url("./assets/dark.png");
+  background-size: cover;
 }
