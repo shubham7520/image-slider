@@ -1,7 +1,7 @@
 import "./Sliderpage.css";
 
 
-function Sliderpage({ slides, current }) {
+function Sliderpage({ slides, current, sliderClassName }) {
 
 
     if (!Array.isArray(slides) || slides.length <= 0) {
@@ -14,13 +14,14 @@ function Sliderpage({ slides, current }) {
             {
                 slides.map((slide, index) => {
                     return (
-                        <div className={index === current ? 'slide active' : 'slide'}>
+                        <div key={slide.id} className={index === current ? 'slide active' : sliderClassName}>
                             {
                                 index === current && (
                                     <div className="rotate">
-                                        <img src={slides[current].regular} alt="shubham" className="imageL" />
-                                        <img src={slides[(current + 1) % slides.length].regular} alt="shubham" className="image" />
-                                        <img src={slides[(current + 2) % slides.length].regular} alt="shubham" className="imageR" />
+                                        {console.log("lenth", slides.length)}
+                                        <img src={slides[current].webformatURL} alt="shubham" className="imageL" />
+                                        <img src={slides[(current + 1) % slides.length].webformatURL} alt="shubham" className="image" />
+                                        <img src={slides[(current + 2) % slides.length].webformatURL} alt="shubham" className="imageR" />
                                     </div>
                                 )
                             }

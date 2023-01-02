@@ -9,10 +9,10 @@
 }
 
 .nevbtn {
-    background-color: #fbeee0;
-    border: 2px solid #422800;
-    border-radius: 30px;
-    color: #422800;
+    background:transparent;
+    border: none;
+    border-radius: 1rem;
+    color: gray;
     cursor: pointer;
     font-weight: 600;
     font-size: 18px;
@@ -20,13 +20,30 @@
     line-height: 50px;
     text-align: center;
     text-decoration: none;
+  
   }
   
   .nevbtn:hover {
-    background-color: #fff;
-    transition: 300ms ease;
-    transform: translate(-2.5px,-2.2px);
-    box-shadow: #422800 2px 3px 0 0;
+    color: white;
+    transition: 500ms ease;
   }
-  
-  
+  .one:active{
+    transform: translate(2.5px,2.2px);
+    transition: 100ms;
+  }.two:active{
+    transform: translate(2.5px,2.2px);
+    transition: 100ms;
+  }.three:active{
+    transform: translate(2.5px,2.2px);
+    transition: 100ms;
+  }.four:active{
+    transform: translate(2.5px,2.2px);
+    transition: 100ms;
+  }.five:active{
+    transform: translate(2.5px,2.2px);
+    transition: 100ms;
+  }  
+
+  .activatedOption{
+    color: white;
+  }
