@@ -14,7 +14,7 @@ const Main = () => {
     const [apiData, setApiData] = useState(null);
 
     const apiCall = async () => {
-        const data = await axios.get(`https://pixabay.com/api/?key=32540211-1f1417761a3d62eaa518f7599&q=${option}&image_type=photo`);
+        const data = await axios.get(`https://pixabay.com/api/?key=32540211-1f1417761a3d62eaa518f7599&q=${option}&image_type=photo&per_page=75`);
         setApiData(data.data.hits);
         // console.log(data.data);
     }
